@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    background-color: #0d1323;
+    font-family: "Rubik", sans-serif;
+}
+.container {
+    height: auto;
+    width: 1050px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 230px 230px;
+    gap: 30px;
+}
+
+header {
+    background-color: #1d204b;
+    grid-row: span 2;
+    color: #fff;
+    border-radius: 14px;
+}
+
+header .hero {
+    height: 335px;
+    background-color: #5746ea;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+header .hero img {
+    width: 78px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+header .hero p {
+    margin-top: 40px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #bec1f5;
+}
+
+header .hero h2 {
+    margin-top: 6px;
+    font-size: 3.4rem;
+    font-weight: 300;
+}
+
+header .hero h3 {
+    font-size: 3.4rem;
+    font-weight: 300;
+}
+
+header .options {
+    padding: 26px;
+}
+
+header .options p {
+    font-size: 1.72rem;
+    color: #6c71af;
+    margin-bottom: 18px;
+    font-weight: 400;
+}
+
+header .options p.active {
+    color: #fff;
+}
+
+header .options p:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    align-items: flex-end;
+    border-radius: 15px;
+}
+
+main.Work {
+    background-color: #ff8b64;
+}
+
+.Work {
+    background-image: url("./assets/images/icon-work.svg");
+    background-repeat: no-repeat;
+    background-position: 90% -6%;
+}
+
+main.Play {
+    background-color: #56c2e6;
+}
+
+.Play {
+    background-image: url("./assets/images/icon-play.svg");
+    background-repeat: no-repeat;
+    background-position: 90% -6%;
+}
+
+main.Study {
+    background-color: #ff5e7d;
+}
+
+.Study {
+    background-image: url("./assets/images/icon-study.svg");
+    background-repeat: no-repeat;
+    background-position: 90% -6%;
+}
+
+main.Exercise {
+    background-color: #4bcf83;
+}
+
+.Exercise {
+    background-image: url("./assets/images/icon-exercise.svg");
+    background-repeat: no-repeat;
+    background-position: 90% -6%;
+}
+
+main.Social {
+    background-color: #7235d1;
+}
+
+.Social {
+    background-image: url("./assets/images/icon-social.svg");
+    background-repeat: no-repeat;
+    background-position: 90% -6%;
+}
+
+main.Self-Care {
+    background-color: #f1c75b;
+}
+
+.Self-Care {
+    background-image: url("./assets/images/icon-self-care.svg");
+    background-repeat: no-repeat;
+    background-position: 90% -6%;
+}
+
+.content {
+    padding: 28px;
+    height: 188px;
+    width: 100%;
+    background-color: #1d204b;
+    color: #fff;
+    border-radius: 14px;
+}
+.content .head {
+    display: flex;
+    align-items: center;
+}
+
+.content .head h2 {
+    margin-right: auto;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.content .head .icon-dots {
+    width: 1.95rem;
+}
+
+.content h3 {
+    margin-top: 22px;
+    font-size: 5.25rem;
+    font-weight: 300;
+}
+
+.content h4 {
+    margin-top: 8px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #bec1f5;
+}
+
+@media all and (max-width: 1080px) {
+    body {
+        height: auto;
+        margin: 30px 0;
+    }
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 230px 230px 230px 230px;
+        width: 700px;
+    }
+}
+
+@media all and (max-width: 740px) {
+    body {
+        height: auto;
+    }
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 230px 230px 230px 230px 230px 230px 230px 230px;
+        width: 280px;
+    }
+}
